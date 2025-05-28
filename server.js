@@ -4,7 +4,7 @@ const express = require('express');
 const sql = require('mssql');
 const dotenv = require('dotenv');
 
-// Load các biến môi trường từ file .env (nếu có)
+// Load các biến môi trường từ file .env 
 dotenv.config();
 
 // Cấu hình kết nối đến SQL Server
@@ -14,8 +14,8 @@ const dbConfig = {
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
     options: {
-      encrypt: false, // Tùy thuộc vào cấu hình SQL Server của bạn
-      trustServerCertificate: true // Chỉ dùng cho mục đích phát triển, không nên dùng trong production
+      encrypt: false, 
+      trustServerCertificate: true 
     }
   };
   
